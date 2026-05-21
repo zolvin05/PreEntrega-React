@@ -1,0 +1,13 @@
+footer {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #111;
+  color: white;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Torta Red Velvet",
+    "description": "Deliciosa torta Red Velvet con bizcochuelo suave de cacao y crema de queso. Perfecta para cumpleaños, celebraciones o acompañar una merienda especial.",
+    "price": 17500,
+    "image": "/img/redvelvet.png"
+  },
+  {
+    "id": 2,
+    "name": "Torta Carrot Cake",
+    "description": "Clásica carrot cake elaborada con zanahoria fresca, nueces y especias suaves, cubierta con una cremosa frosting de queso.",
+    "price": 17500,
+    "image": "/img/carrotcake.png"
+  },
+  {
+    "id": 3,
+    "name": "Tiramisu en Vaso",
+    "description": "Postre individual de tiramisú servido en vaso, con capas de vainillas, café y crema suave de mascarpone espolvoreada con cacao.",
+    "price": 18000,
+    "image": "/img/tiramisuenvasitos.png"
+  },
+  {
+    "id": 4,
+    "name": "Medialunas x 12",
+    "description": "Docena de medialunas artesanales, tiernas y recién horneadas. Ideales para desayunos, meriendas o compartir en reuniones.",
+    "price": 13000,
+    "image": "/img/medialunas.png"
+  },
+  {
+    "id": 5,
+    "name": "Budines",
+    "description": "Budines caseros esponjosos con diferentes sabores disponibles, perfectos para acompañar el café o el mate.",
+    "price": 12000,
+    "image": "/img/budines.png"
+  },
+  {
+    "id": 6,
+    "name": "Pastafrola",
+    "description": "Tradicional pastafrola artesanal con masa suave y relleno de membrillo, ideal para disfrutar en cualquier momento del día.",
+    "price": 10000,
+    "image": "/img/pastafrola.png"
+  }
+]
