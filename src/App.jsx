@@ -4,8 +4,8 @@ import { Header } from './components/Header/Header.jsx'
 import { Routes, Route } from 'react-router-dom'
 
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer.jsx'
-import { Count } from './components/Count/Count'
-import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
+
+import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer.jsx'
 function App() {
   
   return (
@@ -21,7 +21,7 @@ function App() {
       
       
       </Routes>
-       <Count />
+       
     </main>
     <Footer />
         
