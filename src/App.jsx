@@ -3,7 +3,7 @@ import { Footer } from './components/Footer/Footer.jsx'
 import { Header } from './components/Header/Header.jsx'
 import { Routes, Route } from 'react-router-dom'
 
-import { ItemListContainer } from './components/ItemListContainer/ItemListContainer.jsx'
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
 
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer.jsx'
 function App() {
