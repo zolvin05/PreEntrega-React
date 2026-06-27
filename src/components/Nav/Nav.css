@@ -15,3 +15,19 @@
 .nav-list a:hover {
   color: #ff7b00;
 }
+
+.incart {
+  background-color: red;
+  font-size: 1rem;
+  border-radius: 50%;
+
+  width: 20px;
+  height: 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  font-size: 12px;
+  font-weight: bold;
+}

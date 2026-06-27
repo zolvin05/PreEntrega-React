@@ -1,29 +1,48 @@
 import './App.css'
-import { Footer } from './components/Footer/Footer.jsx'
-import { Header } from './components/Header/Header.jsx'
-import { Routes, Route } from 'react-router-dom'
+
+import { Navigate, Routes, Route } from 'react-router-dom'
 
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
 
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
+import { CartView } from './components/Cart/CartView.jsx'
+import { ProductFormContainer } from './components/adminComponents/ProductFormContainer.jsx'
+import { ProductSuccess } from './components/adminComponents/ProductFormSuccess.jsx';
+import { PublicLayout } from './layouts/PublicLayout.jsx'
+import { AdminLayout } from './layouts/AdminLayout.jsx'
+import { Dashboard } from './components/adminComponents/Dashboard/Dashboard.jsx'
+import { ProtectedRoute } from './components/ProtectedRoute/ProtectedRoute.jsx'
+import { Login } from './components/Login/Login.jsx'
+
 function App() {
   
   return (
     <> 
 
-    <Header />
-    <main>
+    
       <Routes>
-        
+        <Route element={<PublicLayout/>}>
         <Route path="/" element={<ItemListContainer/>}/>
         <Route path="/product/:id" element={<ItemDetailContainer/>} />
-        <Route path="/carrito" element={<p>Carrito</p>}/>
-      
-      
+        <Route path="/carrito" element={<CartView />}/>
+        </Route>
+
+        <Route path="/admin/login" element={<Login/>} />
+
+        <Route path="/admin" element={ <ProtectedRoute>
+              <AdminLayout />
+            </ProtectedRoute> }>
+
+        <Route index element={<Navigate to={"dashboard"} />} />
+          <Route path="dashboard" element={<Dashboard />} />
+
+          <Route path="products/new" element={<ProductFormContainer />} />
+          <Route path="products/success/:id" element={<ProductSuccess />} />
+        </Route>
+         
       </Routes>
        
-    </main>
-    <Footer />
+    
         
     </>
   )
